@@ -1,0 +1,18 @@
+# Swift / Xcode
+.build/
+.swiftpm/
+*.xcuserstate
+xcuserdata/
+DerivedData/
+
+# App build artifacts
+build/
+
+# macOS
+.DS_Store
+
+# Claude Code
+.claude/
+
+# Architecture document (not source code)
+MenuBarTodo_Architecture_v2.docx
