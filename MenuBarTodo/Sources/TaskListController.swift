@@ -141,8 +141,8 @@ final class TaskListController: NSViewController, NSTableViewDataSource, NSTable
     private func layoutSubviews() {
         let margin: CGFloat = 12
         NSLayoutConstraint.activate([
-            // Gear button (top-right)
-            gearButton.topAnchor.constraint(equalTo: view.topAnchor, constant: margin),
+            // Gear button (top-right, vertically centered with quick add field)
+            gearButton.centerYAnchor.constraint(equalTo: quickAddField.centerYAnchor),
             gearButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -margin),
             gearButton.widthAnchor.constraint(equalToConstant: 24),
             gearButton.heightAnchor.constraint(equalToConstant: 24),
